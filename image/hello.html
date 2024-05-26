@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <style>
+    #details {
+      display: none;
+      border-top: 1px solid #ccc;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="product">
+    <h1>Product Name</h1>
+    <p>Product short description...</p>
+    <button id="showMoreBtn">Show More</button>
+    <div id="details">
+      <!-- Detailed product info will be injected here -->
+    </div>
+  </div>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const showMoreBtn = document.getElementById('showMoreBtn');
+    const detailsDiv = document.getElementById('details');
+  
+    showMoreBtn.addEventListener('click', () => {
+      console.log('hrelo');
+      const productDetails = `
+        <h2>Product Name</h2>
+        <p>Full description of the product with more details...</p>
+        <p>Price: $99.99</p>
+        <p>Available Colors: Red, Blue, Green</p>
+        <p>Size: S, M, L, XL</p>
+        <p>Customer Reviews: <br>
+          - Review 1: "Amazing product!" <br>
+          - Review 2: "Worth every penny."</p>
+      `;
+      detailsDiv.innerHTML = productDetails;
+  
+      // Show the details div
+      detailsDiv.style.display = 'block';
+  
+      // Hide the Show More button
+      showMoreBtn.style.display = 'none';
+    });
+  });
+  
+  </script>
+</body>
+</html>
