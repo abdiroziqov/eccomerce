@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customClass.css" />
+  </head>
+  <body>
+    <main>
+      <header class="bg-blue">
+        <div class="header__container flex justify-between py-6">
+          <a href="/index.html"> <img src="/image/logo.svg" alt="logo" /></a>
+
+          <div class="flex gap-10">
+            <div class="flex items-center gap-9">
+              <img
+                class="cursor-pointer"
+                src="/image/header-product.svg"
+                alt="icon"
+              />
+              <img
+                class="cursor-pointer"
+                src="/image/header-settings.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="flex gap-2 items-center">
+              <span
+                class="w-8 h-8 bg-green rounded-full flex items-center text-center items-center justify-center font-normal text-white text-xs"
+                >U</span
+              >
+              <p class="font-normal text-white text-xs">Username</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <aside class="fixed bg-white sidenav">
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="/image/sidebar-home.svg" alt="image" />
+                Главная
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+
+            <li>
+              <a href="order.html">
+                <img src="/image/sidebar-order.svg" alt="image" />
+                Мои заказы
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="/image/sidebar-doc.svg" alt="image" />
+                Продукты
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+            <li>
+              <a id="help" href="#">
+                <img src="/image/sidebar-help.svg" alt="image" />
+                Помощь
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main">
+        <div class="main_back">
+          <a href="productSingle.html" class="main_back">
+            <i>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.57849 9.16632L9.45652 4.52369L8.3075 3.31641L1.92581 9.39014C1.58098 9.71833 1.58068 10.2682 1.92514 10.5968L8.30683 16.684L9.45719 15.478L4.58748 10.833L18.3336 10.8339L18.3337 9.1672L11.4561 9.16676L4.57849 9.16632Z"
+                  fill="#808185"
+                />
+              </svg>
+            </i>
+          </a>
+          Вернуться в Главная
+        </div>
+        <div class="product__main">
+          <div class="flex justify-between items-center">
+            <h4>Order ID: 3354654654526</h4>
+
+            <div class="flex gap-4">
+              <button class="white-btn">
+                <img src="/image/order-invoice.svg" alt="image" />
+                Invoice
+              </button>
+              <button class="yellow-btn">
+                Track order
+                <img src="/image/order-track.svg" alt="image" />
+              </button>
+            </div>
+          </div>
+
+          <div class="order-info">
+            <div class="order__info">
+              <p>Order date:</p>
+              <span>Feb 16, 2022</span>
+            </div>
+            <span
+              ><svg
+                width="1"
+                height="20"
+                viewBox="0 0 1 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="0.5"
+                  y1="2.18557e-08"
+                  x2="0.499999"
+                  y2="20"
+                  stroke="#D0D5DD"
+                />
+              </svg>
+            </span>
+            <div class="order-info-truck flex items-center gap-1">
+              <img src="/image/truck.svg" alt="image" />
+              <p>Estimated delivery: August 22, 2024</p>
+            </div>
+          </div>
+          <hr class="hr" />
+
+          <div class="order-information">
+            <div class="justify-between flex mt-5">
+              <h5>Order Confirmed</h5>
+              <h5>Shipped</h5>
+              <h5>Out Foe Delivery</h5>
+              <h5>Delivered</h5>
+            </div>
+
+            <div
+              style="
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+              "
+              class="flex justify-between relative"
+            >
+              <span class="order-information-dot"></span>
+              <span class="order-information-dot"></span>
+              <span class="order-information-dot"></span>
+              <span class="order-information-dot"></span>
+              <span class="order-information-line"></span>
+            </div>
+
+            <div class="flex justify-between">
+              <h6>Wed, 1 lth Jan</h6>
+              <h6>Wed, 1 lth Jan</h6>
+              <h6>Wed, 1 lth Jan</h6>
+              <h6>Expected by, Wed 16th</h6>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="/image/product-watch.png" alt="image" />
+              <div>
+                <h2>product Title</h2>
+                <p>
+                    {{ color }}
+                    {{ color }}
+                    {{ color }}
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="active.js"></script>
+  </body>
+</html>

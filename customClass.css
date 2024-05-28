@@ -270,6 +270,10 @@
   margin-bottom: 48px;
 }
 
+
+.mt-5 {
+  margin-top: 20px;
+}
 /* FONT WEIGHT */
 
 .font-normal {
@@ -394,6 +398,9 @@
 .w-13 {
   width: 52px;
 }
+.w-full {
+  width: 100%;
+}
 
 /* width  */
 
@@ -484,3 +491,13 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+}
+

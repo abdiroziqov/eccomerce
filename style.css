@@ -32,20 +32,21 @@ label {
   margin-bottom: 8px !important;
 }
 ::placeholder {
-  color: red ;
+  color: #9ea8bd;
 }
 input {
-  border: none ;
-  
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
 }
 input:focus {
-  border: 1px solid red ;
+  border: 1px solid transparent;
 }
 input:active {
-  border: 1px solid red ;
+  border: 1px solid transparent;
 }
 input:focus-visible {
-  border: 1px solid red !important;
+  border: 1px solid transparent !important;
   outline: none;
 }
 header {
@@ -140,10 +141,6 @@ header {
   font-size: 16px;
 }
 
-form div {
-  margin-bottom: 15px;
-}
-
 label {
   display: block;
   margin-bottom: 5px;
@@ -177,7 +174,8 @@ input {
 
 .product__card img {
   width: 100%;
-  height: 100%;
+  height: 272px;
+  object-fit: cover;
 }
 
 .yellow-btn {
@@ -188,6 +186,9 @@ input {
   line-height: 22px;
   border-radius: 8px;
   border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .white-btn {
   background: white;
@@ -197,6 +198,9 @@ input {
   line-height: 22px;
   border-radius: 8px;
   border: 1px solid #d5d5d6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .product__main .description {
@@ -220,6 +224,19 @@ input {
   line-height: 22px;
   color: #2b2d33;
   width: 60%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.product__main .description img {
+  max-height: 675px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 .product__main .description div {
   display: flex;
@@ -239,7 +256,6 @@ select:focus-visible {
   border: 1px solid #d5d5d6;
 }
 
-
 .product__main h3 {
   text-align: center;
   font-weight: 700;
@@ -248,12 +264,143 @@ select:focus-visible {
   margin-bottom: 20px;
 }
 .myInput {
-    background-color: #E2E6EE;
-    transition: background-color 0.3s;
+  background-color: #e2e6ee;
+  transition: background-color 0.3s;
 }
 
 .not-empty {
-    background-color: white !important;
-    box-shadow: 0 0 5pt 2pt #D3D3D3;
-    outline-width: 0px;
+  background-color: white !important;
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  outline-width: 0px;
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+.not-empty {
+  border: transparent;
+}
+
+.verify-text {
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 4px;
+  text-align: center;
+}
+.form_price {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: right;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.product-status {
+  height: 80vb;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.product-status img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.product-status .yellow-btn {
+  width: max-content;
+  margin: 0 auto;
+}
+.order__info {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.order-info {
+  display: flex;
+  gap: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.order__info p {
+  color: #667085;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.order__info span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.order-info-truck p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #12b76a;
+}
+
+.hr {
+  border: 0.5px solid #d0d5dd;
+}
+.order-information-dot {
+  width: 28px;
+  height: 22px;
+  border-radius: 11px;
+  display: block;
+  background: #d0d5dd;
+}
+.order-information-line {
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  height: 6px;
+  background: #d0d5dd;
+}
+
+.order-information h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #d0d5dd;
+}
+.order-information h5:first-child {
+  color: #12b76a;
+}
+.order-information-dot:first-child {
+  background: #12b76a;
+  z-index: 1;
+}
+
+.order-information h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+.product-card {
+  margin-top: 30px;
+}
+.product-card-img {
+  display: flex;
+  align-items: center;
+}
+.product-card-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 17px;
+  margin-right: 24px;
+  object-fit: cover;
+}
+.product-card-img h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344054;
+  margin-bottom: 16px;
 }

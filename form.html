@@ -4,22 +4,154 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
-    <style>
-      .error-border {
-        border: 2px solid red;
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customClass.css">
   </head>
   <body>
-    <div class="product__main">
-      <h3>Платежная информация</h3>
-      <form id="myForm">
-        <label for="name">Email:</label>
-        <input type="email" id="name" placeholder="qwert@gmail.com" />
-        <button type="button" id="submitButton">Submit</button>
-      </form>
-    </div>
+
+
+    <main>
+      <header class="bg-blue">
+          <div class="header__container flex justify-between py-6">
+              <a href="/index.html"> <img src="/image/logo.svg" alt="logo"/></a>
+  
+              <div class="flex gap-10">
+                  <div class="flex items-center gap-9">
+                      <img
+                              class="cursor-pointer"
+                              src="/image/header-product.svg"
+                              alt="icon"
+                      />
+                      <img
+                              class="cursor-pointer"
+                              src="/image/header-settings.svg"
+                              alt="icon"
+                      />
+                  </div>
+                  <div class="flex gap-2 items-center">
+                <span
+                        class="w-8 h-8 bg-green rounded-full flex items-center text-center items-center justify-center font-normal text-white text-xs"
+                >U</span
+                >
+                      <p class="font-normal text-white text-xs">Username</p>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <aside class="fixed bg-white sidenav">
+          <div>
+              <ul>
+                  <li>
+                      <a href="#">
+                          <img src="/image/sidebar-home.svg" alt="image"/>
+                          Главная
+                          <img src="/image/chevron.svg" alt="ico"/>
+                      </a>
+                  </li>
+  
+                  <li>
+                      <a href="#">
+                          <img src="/image/sidebar-order.svg" alt="image"/>
+                          Мои заказы
+                          <img src="/image/chevron.svg" alt="ico"/>
+                      </a>
+                  </li>
+  
+                  <li>
+                      <a href="#">
+                          <img src="/image/sidebar-doc.svg" alt="image"/>
+                          Продукты
+                          <img src="/image/chevron.svg" alt="ico"/>
+                      </a>
+                  </li>
+                  <li>
+                      <a id="help" href="#">
+                          <img src="/image/sidebar-help.svg" alt="image"/>
+                          Помощь
+                          <img src="/image/chevron.svg" alt="ico"/>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </aside>
+      <section class="main">
+          <div class="main_back">
+              <a href="productSingle.html" class="main_back">
+                  <i
+                  >
+                      <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                      >
+                          <path
+                                  d="M4.57849 9.16632L9.45652 4.52369L8.3075 3.31641L1.92581 9.39014C1.58098 9.71833 1.58068 10.2682 1.92514 10.5968L8.30683 16.684L9.45719 15.478L4.58748 10.833L18.3336 10.8339L18.3337 9.1672L11.4561 9.16676L4.57849 9.16632Z"
+                                  fill="#808185"
+                          />
+                      </svg>
+                  </i>
+              </a>
+              Вернуться в
+              Главная
+          </div>
+          <div class="product__main">
+            <h3>Платежная информация</h3>
+            <form id="myForm" class="grid grid-col-1 gap-4">
+              <div>
+                <label for="email">Email</label>
+                <input class="myInput" type="email" id="email" placeholder="qwert@gmail.com" />
+               </div>
+               <div>
+                <label for="address">Address</label>
+                <input class="myInput" type="text" id="address" placeholder="1234, street" />
+               </div>
+               <div>
+                <label for="city">City</label>
+                <input class="myInput" type="text" id="city" placeholder="Tashkent" />
+               </div>
+               <div>
+                <label for="country">Country</label>
+                <input class="myInput" type="text" id="country" placeholder="Uzbekistan" />
+               </div>
+               <div>
+                <label for="fullname">Full Name</label>
+                <input class="myInput" type="text" id="fullname" placeholder="Alex Smith" />
+               </div>
+               <div>
+                <label for="paymenttype">Payment Type</label>
+                <input class="myInput" type="text" id="paymenttype" placeholder="VISA" />
+               </div>
+               <div>
+                <label for="creditcardnumber">Credit Card Number</label>
+                <input class="myInput" type="text" id="creditcardnumber" placeholder="#### #### #### ####" maxlength="19" />
+               </div>
+               <div class="flex gap-4">
+                <div class="w-full">
+                  <label for="expdate">Exp Date</label>
+                  <input class="myInput" type="date" id="expdate" placeholder="MM/YY" />
+                </div>
+                <div class="w-full">
+                  <label for="cvv">CVV</label>
+                  <input maxlength="3"  class="myInput" type="number" id="cvv" placeholder="•••" maxlength="3" />
+                </div>
+               </div>
+               <div>
+                <label for="zipcode">Zip Code</label>
+                <input class="myInput" type="number" id="zipcode" placeholder="90210" />
+               </div>
+               <p class="form_price" id="price">$5000</p>
+              <button class="yellow-btn w-full" type="button" id="submitButton">Confirm Payment</button>
+              <p class="verify-text">You verify that this info is correct</p>
+            </form>
+          </div>
+      </section>
+  </main>
+
+
+
+   
 
     <script src="form.js"></script>
   </body>

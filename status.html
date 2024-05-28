@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customClass.css" />
+  </head>
+  <body>
+    <main>
+      <header class="bg-blue">
+        <div class="header__container flex justify-between py-6">
+          <a href="/index.html"> <img src="/image/logo.svg" alt="logo" /></a>
+
+          <div class="flex gap-10">
+            <div class="flex items-center gap-9">
+              <img
+                class="cursor-pointer"
+                src="/image/header-product.svg"
+                alt="icon"
+              />
+              <img
+                class="cursor-pointer"
+                src="/image/header-settings.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="flex gap-2 items-center">
+              <span
+                class="w-8 h-8 bg-green rounded-full flex items-center text-center items-center justify-center font-normal text-white text-xs"
+                >U</span
+              >
+              <p class="font-normal text-white text-xs">Username</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <aside class="fixed bg-white sidenav">
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="/image/sidebar-home.svg" alt="image" />
+                Главная
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+
+            <li>
+              <a href="order.html">
+                <img src="/image/sidebar-order.svg" alt="image" />
+                Мои заказы
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="/image/sidebar-doc.svg" alt="image" />
+                Продукты
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+            <li>
+              <a id="help" href="#">
+                <img src="/image/sidebar-help.svg" alt="image" />
+                Помощь
+                <img src="/image/chevron.svg" alt="ico" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main">
+        <div class="main_back">
+          <a href="productSingle.html" class="main_back">
+            <i>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.57849 9.16632L9.45652 4.52369L8.3075 3.31641L1.92581 9.39014C1.58098 9.71833 1.58068 10.2682 1.92514 10.5968L8.30683 16.684L9.45719 15.478L4.58748 10.833L18.3336 10.8339L18.3337 9.1672L11.4561 9.16676L4.57849 9.16632Z"
+                  fill="#808185"
+                />
+              </svg>
+            </i>
+          </a>
+          Вернуться в Главная
+        </div>
+        <div class="product__main product-status">
+          <img src="/image/success.svg" alt="image" />
+          <p>Успешно</p>
+          <a href="order.html">
+            <button class="yellow-btn">Вернуться на мои заказы</button></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script src="active.js"></script>
+  </body>
+</html>
