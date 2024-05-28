@@ -86,7 +86,7 @@ function render() {
                             class="flex items-center justify-between"
                         >
                             <p class="product__main-price">$${product.price}</p>
-                            <div class="flex gap-4 items-center">
+                            <div class="flex gap-4 items-center btns">
                                 <button class="white-btn" id=${product.id}>Подробнее</button>
                                 <button class="yellow-btn" id=${product.id}>Заказать</button>
                             </div>

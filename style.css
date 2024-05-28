@@ -72,10 +72,10 @@ header {
 }
 .sidenav ul > li:hover a {
   color: #185c98;
-  background: #f8f8f8;
+  background: #f6f6f6;
 }
 .sidenav ul > li:hover {
-  background: #f8f8f8;
+  background: #f1f1f1;
   cursor: pointer;
 }
 .sidenav ul > li:hover svg {
@@ -189,6 +189,8 @@ input {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-align: center;
+  justify-content: center;
 }
 .white-btn {
   background: white;
@@ -201,6 +203,8 @@ input {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-align: center;
+  justify-content: center;
 }
 
 .product__main .description {
@@ -403,4 +407,105 @@ select:focus-visible {
   line-height: 32px;
   color: #344054;
   margin-bottom: 16px;
+}
+.product-card-img div p {
+  border-right: 1px solid #d0d5dd;
+  margin-right: 12px;
+  padding-right: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+.product-card-img div p:last-child {
+  border: none;
+}
+.product-card-info p:first-child {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1d2939;
+  line-height: 30px;
+}
+.product-card-info p:last-child {
+  color: #667085;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer__left {
+  color: #475467;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.footer__right {
+  color: #475467;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.footer__left p,
+.footer__right p {
+  margin-bottom: 8px;
+}
+.border-top {
+  margin-top: 20px;
+  border-top: 1px solid #d0d5dd;
+  padding-top: 20px;
+}
+.product__main h4 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.payment__order p,
+.order__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+}
+.address__info {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #667085;
+  width: 215px;
+}
+.index__product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.index__product .btns {
+  display: none;
+}
+.index__product img {
+  height: 300px;
+  border-radius: 12px;
+}
+
+
+.active {
+  background: #F8F8F8;
+  position: relative;
+  color: #185C98;
+  transition: all 0.3s linear;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #185C98;
+  width: 4px;
+  height: 100%;
+}
+li {
+  position: relative;
 }
