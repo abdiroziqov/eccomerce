@@ -92,9 +92,9 @@
           </a>
           Вернуться в Главная
         </div>
-        <div class="product__main">
+        <div class="product__main" id="product_main">
           <div class="flex justify-between items-center">
-            <h4>Order ID:</h4>
+            <h4>Order ID: <span id="product_id"></span></h4>
 
             <div class="flex gap-4">
               <button class="white-btn">
@@ -111,7 +111,7 @@
           <div class="order-info">
             <div class="order__info">
               <p>Order date:</p>
-              <span>Feb 16, 2022</span>
+              <span id="order_date">Feb 16, 2022</span>
             </div>
             <span
               ><svg
@@ -132,7 +132,7 @@
             </span>
             <div class="order-info-truck flex items-center gap-1">
               <img src="/image/truck.svg" alt="image" />
-              <p>Estimated delivery: August 22, 2024</p>
+              <p>Estimated delivery: <span id="delivery_date"></span></p>
             </div>
           </div>
           <hr class="hr" />
@@ -162,49 +162,16 @@
             </div>
 
             <div class="flex justify-between">
-              <h6>Wed, 1 lth Jan</h6>
-              <h6>Wed, 1 lth Jan</h6>
-              <h6>Wed, 1 lth Jan</h6>
-              <h6>Expected by, Wed 16th</h6>
+              <h6 id="order_date_now">Wed, 1 lth Jan</h6>
+              <h6>2024-5-5</h6>
+              <h6>2024-5-6</h6>
+              <h6 id="delivery_date_now">Expected by, Wed 16th </h6>
             </div>
           </div>
 
-          <div class="product-card flex justify-between items-center">
-            <div class="product-card-img">
-              <img src="/image/product-watch.png" alt="image" />
-              <div>
-                <h2>product Title</h2>
-                <div class="flex">
-                  <p>Space Gray</p>
-                  <p>32GB</p>
-                  <p>1 TB</p>
-                </div>
-              </div>
-            </div>
+          <div id="products_list"></div>
 
-            <div class="product-card-info">
-              <p>$2599.00</p>
-              <p>Oty: 1</p>
-            </div>
-          </div>
-
-          <div class="flex justify-between border-top">
-            <div>
-              <h4>Payment</h4>
-              <span class="flex items-center payment__order">
-                <p>Visa</p>
-                <p>**56</p>
-                <img class="visa" src="/image/visa.svg" alt="image" />
-              </span>
-            </div>
-            <div>
-              <h4>Delivery</h4>
-              <p class="order__address">Adress</p>
-              <p class="address__info">
-                847 Jewess Bridge Apt. 174 London, UK 474-769-3919
-              </p>
-            </div>
-          </div>
+         <div id="payment_info"></div>
 
           <div class="border-top">
             <div class="flex justify-between">
@@ -237,7 +204,7 @@
                 <h4>Order summary</h4>
                 <div class="flex justify-between">
                   <div class="footer__left">
-                    <p class="text-xl">Discount</p>
+                    <p class="text-xl">Price</p>
                     <p>Discount</p>
                     <p>Delivery</p>
                     <p>Tax</p>
@@ -245,13 +212,7 @@
                     <p>Total</p>
                   </div>
 
-                  <div class="footer__right">
-                    <p style="color: #475467; font-size: 20px">$5554</p>
-                    <p>(20%) - $1109.40</p>
-                    <p>$0.00</p>
-                    <p>+$221.88</p>
-                    <p>$0.00</p>
-                  </div>
+                  <div id="delivery_price"></div>
                 </div>
               </div>
             </div>

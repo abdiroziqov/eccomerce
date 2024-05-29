@@ -79,4 +79,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         event.target.value = value;
     });
+
+    // Fill 
+    document.getElementById('price').innerHTML = '$' + JSON.parse(localStorage.getItem('product'))?.price
 });
