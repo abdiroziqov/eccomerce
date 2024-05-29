@@ -52,6 +52,7 @@ input:focus-visible {
 header {
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 .header__container {
   width: 100%;
@@ -75,7 +76,7 @@ header {
   background: #f6f6f6;
 }
 .sidenav ul > li:hover {
-  background: #f1f1f1;
+  background: #f6f6f6;
   cursor: pointer;
 }
 .sidenav ul > li:hover svg {

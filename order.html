@@ -48,7 +48,7 @@
             </li>
 
             <li class="active">
-              <a style="color: #185C98;" href="order.html">
+              <a style="color: #185c98" href="order.html">
                 <img src="/image/sidebar-order-active.svg" alt="image" />
                 Мои заказы
                 <img src="/image/chevron.svg" alt="ico" />
@@ -94,7 +94,7 @@
         </div>
         <div class="product__main">
           <div class="flex justify-between items-center">
-            <h4>Order ID: 3354654654526</h4>
+            <h4>Order ID:</h4>
 
             <div class="flex gap-4">
               <button class="white-btn">
@@ -262,37 +262,6 @@
 
     {{ storedProduct}}
 
-    <!-- <script>
-      const storedProduct = JSON.parse(localStorage.getItem("product"));
-
-      // Function to insert product data into the template
-      function populateProductData(product) {
-        if (product) {
-          document.getElementById("productImage").src =
-            product.image || "/image/default-product.png";
-          document.getElementById("productTitle").textContent =
-            product.title || "Product Title";
-          document.getElementById("productColor").textContent =
-            product.color || "N/A";
-          document.getElementById("productStorage").textContent =
-            product.storage || "N/A";
-          document.getElementById("productAdditional").textContent =
-            product.additionalInfo || "N/A";
-          document.getElementById("productPrice").textContent = `$${
-            product.price || "0.00"
-          }`;
-          document.getElementById("productQuantity").textContent = `Qty: ${
-            product.quantity || "1"
-          }`;
-        }
-      }
-
-      // Check if storedProduct exists and is an object
-      if (storedProduct && typeof storedProduct === "object") {
-        populateProductData(storedProduct);
-      } else {
-        console.error("No valid product data found in local storage.");
-      }
-    </script> -->
+    <script src="order.js"></script>
   </body>
 </html>
